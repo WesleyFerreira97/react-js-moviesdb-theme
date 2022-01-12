@@ -5,7 +5,7 @@ import './style.css'
 export function CardMovies(props) {
     const { movie } = props;
     const [movieInfo, setMovieInfo] = useState([]);
-
+    console.log(movie);
     useEffect(() => {
         setMovieInfo(movie)
     }, [movie]);

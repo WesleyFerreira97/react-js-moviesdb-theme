@@ -39,34 +39,28 @@ const minWidth = 250;
 
 export const GridCols = styled.div`
     width: 100%;
-    display: grid;
-    grid-auto-columns: 300px;
-    grid-template-columns: repeat(${props => (
-        props.componentWidth / props.xs <= minWidth ? 1 : props.xs
-    )}, minmax(${minWidth}px, 1fr));
-
-    @media (min-width: 768px) {
-        grid-template-columns: repeat(${props => (
-        props.componentWidth / props.sm <= minWidth ? 1 : props.sm
-    )}, minmax(${minWidth}px, 1fr));
-    }
-    @media (min-width: 920px) {
-        grid-template-columns: repeat(${props => (
-        props.componentWidth / props.md <= minWidth ? 1 : props.md
-    )}, minmax(${minWidth}px, 1fr));
-    }
-    @media (min-width: 1200px) {
-        grid-template-columns: repeat(${props => (
-        props.componentWidth / props.lg <= minWidth ? 1 : props.lg
-    )}, minmax(${minWidth}px, 1fr));
-    }
-
     overflow: hidden;
-    gap: ${props => props.gap};
-    background-color: #1B262C;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(${props => props.xs}px, 1fr));
+
+    @media (min-width: 540px) {
+        grid-template-columns: repeat(auto-fill, minmax(${props => props.sm}px, 1fr));
+    }
+
+    @media (min-width: 720px) {
+        grid-template-columns: repeat(auto-fill, minmax(${props => props.md}px, 1fr));
+    }
+
+    @media (min-width: 960px) {
+        grid-template-columns: repeat(auto-fill, minmax(${props => props.lg}px, 1fr));
+    }
 `;
 
 GridCols.defaultProps = {
+    xs: 150,
+    // sm: 170,
+    // md: 190,
+    // lg: 220,
     cols: 3,
     gap: "0"
 }
