@@ -1,16 +1,46 @@
-.card-wrap {
-  background-color: #ED6663;
-  border: 1px solid black;
+.card {
+  overflow: hidden;
+  height: 100%;
 }
-.card-image {
-  height: 150px;
+
+.card__image {
+  height: 300px;
   width: 100%;
 }
 
-.card-image img {
+.card__image img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.card-info__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-info__bar > * {
+  padding: .75rem 0;
+}
+
+.card-info__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  line-height: 140%;
+  font-weight: 500;
+  color: white;
+}
+
+.card-info__release, .card-info__tag {
+  color: gray;
+  font-family: "Montserrat", sans-serif;
+  font-size: .8rem;
+  line-height: 140%;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */

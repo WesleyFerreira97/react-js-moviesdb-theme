@@ -13,6 +13,6 @@ export const getPopularMovies = () => {
         .then(data => data.results);
 }
 
-export const getImage = (imageId) => {
+export const getImageUrl = (imageId) => {
     return IMAGE_URL + imageId;
 }

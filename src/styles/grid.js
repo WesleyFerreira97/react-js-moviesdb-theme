@@ -4,7 +4,7 @@ export let Container = styled.div`
     height: 100%;
     display: flex;
     justify-content: center;
-    background: ${props => props.bg};
+    background: #${props => props.bg};
 `;
 
 Container.defaultProps = {
@@ -41,6 +41,7 @@ export const GridCols = styled.div`
     width: 100%;
     overflow: hidden;
     display: grid;
+    gap: ${props => props.gap};
     grid-template-columns: repeat(auto-fill, minmax(${props => props.xs}px, 1fr));
 
     @media (min-width: 540px) {
@@ -61,6 +62,6 @@ GridCols.defaultProps = {
     // sm: 170,
     // md: 190,
     // lg: 220,
-    cols: 3,
+    cols: 0,
     gap: "0"
 }
