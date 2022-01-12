@@ -1,7 +1,7 @@
 import React from 'react'
 import { GridMovies } from './components/gridMovies/index'
 import './styles/reset.css'
-import { Grid, Row, Col } from './styles/grid'
+import { Container, Row, Col } from './styles/grid'
 
 
 
@@ -10,11 +10,11 @@ function App() {
 
   return (
     <>
-      <Grid>
+      <Container>
         <Row width="80%">
           <GridMovies />
         </Row>
-      </Grid>
+      </Container>
     </>
   );
 }
