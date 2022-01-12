@@ -1,22 +1,26 @@
 import React, {useState, useEffect } from 'react'
-import { getPopularMovies } from '../../services/apiFunctions'
 import { Col } from '../../styles/grid'
+import { getImage } from '../../services/apiFunctions'
+import './style.css'
 
-export function CardMovies() {
-    const [movies, setMovies] = useState([]);
+export function CardMovies(props) {
+    const { movie, width, minWidth } = props;
+    const [movieInfo, setMovieInfo] = useState([]);
+
     useEffect(() => {
-        getPopularMovies().then(data => setMovies(data));
-    }, [])
+        setMovieInfo(movie)
+    }, [movie]);
 
     return (
         <>
-            <div>
-                {movies.map((movie, index) => ( 
-                    <Col key={index} width="100%" minWidth="150px" height="0">
-                        <div key={index}>{movie.title}</div>
-                    </Col>
-                ))}    
-            </div>
+            <Col width={width} minWidth={minWidth}>
+                <div className='card-wrap'>
+                    <div>{movie.title}</div>
+                    <div className='card-image'>
+                        <img src={getImage(movie.poster_path)} alt={movie.title} />
+                    </div>
+                </div>
+            </Col>
         </>
     );
 }

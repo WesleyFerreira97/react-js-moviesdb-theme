@@ -4,15 +4,12 @@ export const Grid = styled.div`
     height: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgb(76, 26, 99);
 `;
 
 export const Row = styled.div`
     width: ${props => props.width};
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    background-color: rgb(125, 22, 194);
 `;
 
 Row.defaultProps = {
@@ -20,13 +17,15 @@ Row.defaultProps = {
 }
 
 export const Col = styled.div`
-    height: 100%;
+    height: ${props => props.height};
     width: ${props => props.width};
     min-width: ${props => props.minWidth};
+    flex-basis: 1;
+    flex-grow: 1;
 `;
 
 Col.defaultProps = {
     width: "100%",
     minWidth: "150px",
-    height: "100%"
+    height: "auto"
 }

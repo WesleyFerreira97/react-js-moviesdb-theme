@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardMovies } from './components/cardMovies/index'
+import { GridMovies } from './components/gridMovies/index'
 import './styles/reset.css'
 import { Grid, Row, Col } from './styles/grid'
 
@@ -12,7 +12,7 @@ function App() {
     <>
       <Grid>
         <Row width="80%">
-          <CardMovies />
+          <GridMovies />
         </Row>
       </Grid>
     </>
