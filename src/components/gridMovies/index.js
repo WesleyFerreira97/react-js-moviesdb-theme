@@ -1,16 +1,13 @@
-import React, {useState, useEffect, useContext} from 'react'
+import React, {useState, useEffect } from 'react'
 import { getPopularMovies } from '../../services/apiFunctions'
 import { CardMovies } from '../../components/cardMovies/index'
-import { GridCols } from '../utilities/grid';
-import { ThemeColors } from '../../App';
 import { SectionTitle } from './styles';
+import { GridCols } from '../utilities/grid';
 
 
 
 export function GridMovies() {
     const [movies, setMovies] = useState([]);
-    const colors = useContext(ThemeColors);
-    console.log(colors.background);
 
     useEffect(() => {
         getPopularMovies().then(data => setMovies(data));

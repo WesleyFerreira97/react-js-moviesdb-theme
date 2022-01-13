@@ -1,10 +1,6 @@
-export const theme = {
-    light: {
-      foreground: "#000000",
-      background: "#eeeeee"
-    },
-    dark: {
-      foreground: "dark",
-      background: "#222222"
-    }
-};
+export const color = {
+    primary: '#FF2E63',
+    secondary: '#0F1021',
+    tertiary: '#9D9D9D',
+    neutral: '#fff',
+}
