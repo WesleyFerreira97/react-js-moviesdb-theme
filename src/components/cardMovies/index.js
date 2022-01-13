@@ -1,12 +1,9 @@
-import React, {useState, useEffect } from 'react'
+import React from 'react'
 import { getImageUrl } from '../../services/apiFunctions'
 import './style.css'
 
 export function CardMovies(props) {
-    const { title, vote_average, poster_path, backdrop_path, overview, genre_ids, release_date } = props.movie;
-
-    console.log(props.movie);
-
+    const { title, vote_average, backdrop_path, genre_ids, release_date } = props.movie;
 
     return (
         <div className='card'>

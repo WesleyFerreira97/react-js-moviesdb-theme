@@ -35,8 +35,6 @@ Col.defaultProps = {
     height: "auto"
 }
 
-const minWidth = 250;
-
 export const GridCols = styled.div`
     width: 100%;
     overflow: hidden;
