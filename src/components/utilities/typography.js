@@ -31,6 +31,13 @@ typography.TitleMd = css`
     font-weight: 500;
 `;
 
+typography.TitleSm = css`
+    ${title}
+    font-size: 1.1rem;
+    line-height: 140%;
+    font-weight: 500;
+`;
+
 typography.TextMd = css`
     ${text}
     font-size: 1rem;
