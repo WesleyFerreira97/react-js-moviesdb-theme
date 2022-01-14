@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoint } from "./breakpoints";
 
 export let Container = styled.div`
     height: 100%;
@@ -15,6 +16,9 @@ export const Row = styled.span`
     width: ${props => props.width};
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: ${breakpoint.sm}) {
+        width: 95%;
+    }
 `;
 
 Row.defaultProps = {

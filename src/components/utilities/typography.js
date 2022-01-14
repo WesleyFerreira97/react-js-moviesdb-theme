@@ -1,4 +1,5 @@
 import { css } from "styled-components";
+import { breakpoint } from "./breakpoints";
 
 const title = css`
     font-family: "Montserrat", sans-serif;
@@ -33,7 +34,7 @@ typography.TitleMd = css`
 
 typography.TitleSm = css`
     ${title}
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 140%;
     font-weight: 500;
 `;
@@ -51,7 +52,6 @@ typography.TextSm = css`
     line-height: 140%;
     font-weight: 500;
 `;
-
 
 
 
