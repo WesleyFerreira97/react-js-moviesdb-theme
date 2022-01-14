@@ -13,9 +13,13 @@ export const typography = {}
 
 typography.TitleXl = css`
     ${title}
-    font-size: 3.1rem;
+    font-size: 2rem;
     line-height: 140%;
     font-weight: 700;
+
+    @media (min-width: ${breakpoint.md} ) {
+        font-size: 2.5rem;
+    }
 `;
 
 typography.TitleLg = css`

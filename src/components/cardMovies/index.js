@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { getImageUrl, getGenre } from '../../services/apiFunctions'
-import { Card, CardImage, CardInfo, CardInfoBar, LikeButton } from './style';
+import { Card, CardImage, CardInfo, CardInfoBar, PlayButton } from './style';
 import { BsPlay } from "react-icons/bs";
 
 export function CardMovies(props) {
@@ -15,7 +15,7 @@ export function CardMovies(props) {
         <Card>
             <CardImage>
                 <img src={getImageUrl(backdrop_path)} alt={title} />
-                <LikeButton><BsPlay /></LikeButton>
+                <PlayButton><BsPlay /></PlayButton>
             </CardImage>
             <CardInfo>
                 <CardInfoBar>
@@ -26,8 +26,8 @@ export function CardMovies(props) {
                     <h2>{genre}</h2>
                 </CardInfoBar>
             </CardInfo>
-
         </Card>
     );
 }
+
 

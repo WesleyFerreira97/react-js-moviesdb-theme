@@ -15,13 +15,13 @@ export function GridMovies() {
 
     return (
         <>
-        <SectionTitle>Popular Movies</SectionTitle>
-        <h1 className='section-title title-xl'>Opening This Week</h1>
-        <GridCols xs={210} gap={'1.5rem'}>
-         {movies.map((movie, index) => (
-             <CardMovies key={index} movie={movie} />
-         ))}   
-         </GridCols>
+            <SectionTitle>Popular Movies</SectionTitle>
+            
+            <GridCols xs={210} gap={'1.5rem'}>
+            {movies.map((movie, index) => (
+                <CardMovies key={index} movie={movie} />
+            ))}   
+            </GridCols>
         </>
     )
 }
