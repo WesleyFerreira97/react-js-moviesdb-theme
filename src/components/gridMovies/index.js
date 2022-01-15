@@ -6,7 +6,7 @@ import { GridCols } from '../utilities/grid';
 
 
 
-export function GridMovies() {
+export function GridMovies(title, listMovies) {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {

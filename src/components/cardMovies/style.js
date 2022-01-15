@@ -22,31 +22,31 @@ export const CardImage = styled.div`
 `;
 
 export const PlayButton = styled.div`
-    width: 100px;
     height: 70px;
+    width: 100px;
     position: absolute;
     bottom: 0;
     right: 0;
-    color: #fff;
-    z-index: 10;
-    font-size: 2rem;
-    overflow: hidden;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    z-index: 10;
+    overflow: hidden;
     padding: .25rem;
+    font-size: 2rem;
+    color: #fff;
     cursor: pointer;
     
     &:before {
         content: '';
-        z-index: -1;
-        position: absolute;
-        width: 200%;
         height: 160%;
+        width: 200%;
+        position: absolute;
         bottom: -100%;
         right: -100%;
-        transform: rotate(-40deg);
+        z-index: -1;
         background: ${color.primary};
+        transform: rotate(-40deg);
     }
 
     &:hover {
@@ -65,7 +65,6 @@ export const PlayButton = styled.div`
             border: 5px solid ${color.primary};
             animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
-
     }
     
     &:active {
@@ -77,16 +76,6 @@ export const PlayButton = styled.div`
         }
         color: #fff;
     }
-
-    /* @keyframes playAnimation {
-        to {
-
-    } */
-    /* @media (min-width: ${breakpoint.md} ) { 
-        top: inherit;
-        bottom: 0;
-    }
-     */
    
 `;
 
