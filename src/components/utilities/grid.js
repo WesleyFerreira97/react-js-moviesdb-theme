@@ -12,7 +12,7 @@ Container.defaultProps = {
     bg: 'inherit',
 }
 
-export const Row = styled.span`
+export const Row = styled.div`
     width: ${props => props.width};
     display: flex;
     flex-wrap: wrap;

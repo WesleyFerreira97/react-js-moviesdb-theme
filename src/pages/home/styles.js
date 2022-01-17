@@ -5,5 +5,5 @@ import { typography } from '../../components/utilities/typography';
 export const SectionTitle = styled.h1`
     ${typography.TitleXl}
     color: ${colors.neutral};
-    margin: 1.5rem 0;
+    margin: 1rem 0;
 `;
