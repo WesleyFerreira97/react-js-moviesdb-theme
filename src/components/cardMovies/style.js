@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { typography } from "../utilities/typography";   
-import { color } from "../utilities/colors";
+import { colors } from "../utilities/colors";
 import { breakpoint } from "../utilities/breakpoints";
 
 export const Card = styled.div`
@@ -45,7 +45,7 @@ export const PlayButton = styled.div`
         bottom: -100%;
         right: -100%;
         z-index: -1;
-        background: ${color.primary};
+        background: ${colors.primary};
         transform: rotate(-40deg);
     }
 
@@ -54,15 +54,15 @@ export const PlayButton = styled.div`
         width: 100%;
         transition: .5s;
         font-size: 4rem;
-        color: ${color.primary};
+        color: ${colors.primary};
         animation-timing-function: ease-in;
 
         &:before {
             content: '';
-            background: ${color.secondary};
+            background: ${colors.secondary};
             height: 100%;
             width: 300%;
-            border: 5px solid ${color.primary};
+            border: 5px solid ${colors.primary};
             animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
     }
@@ -100,7 +100,7 @@ export const CardInfo = styled.div`
 
     h1 {
         ${typography.TitleSm}
-        color: ${color.neutral};
+        color: ${colors.neutral};
         font-size: 1.5rem;
         font-weight: 800;
 
@@ -112,7 +112,7 @@ export const CardInfo = styled.div`
 
     h2, h3, h4, h5, h6 {
         ${typography.TextSm}
-        color: ${color.tertiary};
+        color: ${colors.tertiary};
     }
 `;
 
