@@ -1,12 +1,14 @@
 import React, {useState, useEffect } from 'react'
-import { MoviesFilterWrap, MobileDropDown, Form } from './styles'
+import { MoviesFilterWrap, MobileDropDown, FormFilter } from './styles'
 import { ImMenu3 } from "react-icons/im";
 
 export function MoviesFilter() {
     const [category, setCategory] = useState('All');
+    const [openFilter, setOpenFilter] = useState(false);
 
-    function handleChange(e) {
-
+    function openDropDown(e) {
+        setOpenFilter(!openFilter);
+        console.log(openFilter);
     }
 
     function handleSubmit(event) {
@@ -17,14 +19,18 @@ export function MoviesFilter() {
         console.log(category);
     }, [category]);
 
+    useEffect(() => {
+
+    },[]);
+
     return (
         <MoviesFilterWrap>
-            <MobileDropDown>
+            <MobileDropDown onClick={openDropDown}>
                 <ImMenu3 /> 
                 <h3>Filter Movies</h3>
             </MobileDropDown>
 
-            <Form>
+            <FormFilter statusDropDown={openFilter}>
                 <form onSubmit={handleSubmit}>
                     <label>Select Movie</label>
                     <select value={category} onChange={handleSubmit}>
@@ -42,7 +48,7 @@ export function MoviesFilter() {
                     </select>
                     <input type="submit" value="Submit" /> 
                 </form>
-            </Form>
+            </FormFilter>
         </MoviesFilterWrap>
     )
 }

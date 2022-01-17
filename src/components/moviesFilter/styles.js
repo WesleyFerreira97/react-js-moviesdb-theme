@@ -1,9 +1,20 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import { colors } from "../utilities/colors";
 import { typography } from "../utilities/typography";
 
+// const Open = styled.css`
+//     display: none;
+//     transform: translate3d(-100%, 0, 0);
+//     transition: 1s;
+// `;
+
+// const Close = styled.css`
+//     display: block;
+//     transform: translate3d(0, 0, 0);
+//     transition: 1s;
+// `;
+
 export const MoviesFilterWrap = styled.div`
-    /* background-color: ${colors.primary}; */
     width: 100%;
     margin: 1rem 0;
 `;
@@ -15,16 +26,16 @@ export const MobileDropDown = styled.div`
     color: ${colors.neutral};
 
     h3 {
-        /* color: ${colors.neutral}; */
         ${typography.TitleMd};
         padding-left: 1rem;
         font-size: 1rem;
     }
 `;
 
-export const Form = styled.form`
+export const FormFilter = styled.form`
 
     form {
-        display: none;
+        ${props => (props.statusDropDown ? css`display: block;`: css`display: none;`)};
     }
 `;
+
