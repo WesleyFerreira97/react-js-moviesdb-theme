@@ -52,9 +52,9 @@ typography.TextMd = css`
 
 typography.TextSm = css`
     ${text}
-    font-size: .8rem;
+    font-size: .9rem;
     line-height: 140%;
-    font-weight: 500;
+    font-weight: 300;
 `;
 
 
