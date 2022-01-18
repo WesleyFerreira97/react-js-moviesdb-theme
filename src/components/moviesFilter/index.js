@@ -32,9 +32,9 @@ export function MoviesFilter() {
             </MobileDropDown>
 
             <FormFilter statusDropDown={openFilter}>
-                <form className='formulario' onSubmit={handleSubmit}>
+                <form className='form-wrap' onSubmit={handleSubmit}>
                     <div className='form-group'>
-                        <label>Select Movie</label>
+                        <label>Genres </label>
                         <select value={category} onChange={handleSubmit}>
                             <option value="all">All</option>
                             <option value="action">Action</option>
@@ -43,7 +43,7 @@ export function MoviesFilter() {
                         </select>
                     </div>
                     <div className='form-group'>
-                        <label>Select Movie</label>
+                        <label>Release Date </label>
                         <select value={category} onChange={handleSubmit}>
                             <option value="all">All</option>
                             <option value="action">Action</option>
@@ -52,7 +52,7 @@ export function MoviesFilter() {
                         </select>
                     </div>
                     <div className='form-group'>
-                        <label>Select Movie</label>
+                        <label>Vote Average </label>
                         <select value={category} onChange={handleSubmit}>
                             <option value="all">All</option>
                             <option value="action">Action</option>
@@ -60,7 +60,7 @@ export function MoviesFilter() {
                             <option value="drama">Drama</option>
                         </select>
                     </div>
-                    <input type="submit" value="Search" /> 
+                    <input className='submit-btn' type="submit" value="Search" /> 
                 </form>
             </FormFilter>
         </MoviesFilterWrap>
