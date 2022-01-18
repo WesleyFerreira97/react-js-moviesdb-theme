@@ -60,7 +60,7 @@ export function MoviesFilter() {
                             <option value="drama">Drama</option>
                         </select>
                     </div>
-                    <input className='submit-btn' type="submit" value="Search" /> 
+                    {/* <input className='submit-btn' type="submit" value="Search" />  */}
                 </form>
             </FormFilter>
         </MoviesFilterWrap>

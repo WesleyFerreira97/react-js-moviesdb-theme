@@ -31,6 +31,7 @@ export const FormFilter = styled.div`
     position: relative;
     z-index: 10;
     overflow: hidden;
+    margin: 1.5rem 0;
 
 
     ${props => {
@@ -85,8 +86,11 @@ export const FormFilter = styled.div`
 
     @media (min-width: ${breakpoint.lg}) {
         .form-wrap {
-            display: flex;
-            flex-direction: row;
+            /* display: flex;
+            flex-direction: row; */
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1rem;
         }
 
         .form-group {
