@@ -9,20 +9,11 @@ export function MoviesFilter() {
 
     function openDropDown(e) {
         setOpenFilter(!openFilter);
-        console.log(openFilter);
     }
 
     function handleSubmit(event) {
         setCategory(event.target.value);
     }
-
-    useEffect( () => {
-        console.log(category);
-    }, [category]);
-
-    useEffect(() => {
-
-    },[]);
 
     return (
         <MoviesFilterWrap>

@@ -27,7 +27,7 @@ export const MobileDropDown = styled.div`
 `;
 
 export const FormFilter = styled.div`
-    max-height: 100%;
+    max-height: 0;
     position: relative;
     z-index: 10;
     overflow: hidden;
@@ -86,8 +86,6 @@ export const FormFilter = styled.div`
 
     @media (min-width: ${breakpoint.lg}) {
         .form-wrap {
-            /* display: flex;
-            flex-direction: row; */
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             gap: 1rem;
@@ -95,8 +93,6 @@ export const FormFilter = styled.div`
 
         .form-group {
             width: 25;
-            /* background-color: gray; */
-            /* flex-direction: row; */
 
             select {
                 width: 100%;

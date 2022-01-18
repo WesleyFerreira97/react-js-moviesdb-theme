@@ -5,6 +5,7 @@ export let Container = styled.div`
     height: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
     background: #${props => props.bg};
 `;
 

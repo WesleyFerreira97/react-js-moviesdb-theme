@@ -4,7 +4,7 @@ import { GridMovies } from '../../components/gridMovies/index'
 import { SectionTitle } from './styles'
 import { getPopularMovies } from '../../services/apiFunctions'
 import { MoviesFilter } from '../../components/moviesFilter/index'
-
+import { MainContent } from '../../components/mainContent/index'
 
 export function Home() {
     const [popularMovies, setPopularMovies] = useState([]);
@@ -15,6 +15,7 @@ export function Home() {
     
     return (
         <>
+        <MainContent />
         <Container bg={'0F1021'}>
             <Row width="80%">
                 <SectionTitle>Popular Movies</SectionTitle>
