@@ -1,7 +1,7 @@
-import React, {useState, useEffect } from 'react'
+import React, {useState } from 'react'
 import { MoviesFilterWrap, MobileDropDown, FormFilter } from './styles'
 import { ImMenu3 } from "react-icons/im";
-import { Accordion } from 'react-bootstrap';
+// import { Accordion } from 'react-bootstrap';
 
 export function MoviesFilter() {
     const [category, setCategory] = useState('All');

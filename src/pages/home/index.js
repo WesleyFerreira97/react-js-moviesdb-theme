@@ -1,4 +1,4 @@
-import React, { useEffect, useState, createContext } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Container, Row } from '../../components/utilities/grid'
 import { GridMovies } from '../../components/gridMovies/index'
 import { SectionTitle } from './styles'

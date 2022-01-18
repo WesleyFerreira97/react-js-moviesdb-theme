@@ -1,12 +1,16 @@
 import styled from "styled-components";
 import { colors } from "../utilities/colors";
 import { typography } from "../utilities/typography";
-import { breakpoint } from "../utilities/breakpoints";
+// import { breakpoint } from "../utilities/breakpoints";
 
 export const MainContentWrap = styled.div`
     height: 100vh;
     width: 100%;
     position: relative;
+
+    .current-index {
+        z-index: 30;
+    }
 `;
 
 export const MainContentItem = styled.div`
@@ -44,6 +48,7 @@ export const MainContentInfo = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: absolute;
     top: 0;
     z-index: 10;
@@ -51,7 +56,7 @@ export const MainContentInfo = styled.div`
     .main-content {
 
         &__info-wrap{
-            padding: 2rem;
+            /* padding: 2rem; */
             width: 50%;
         }
         
@@ -64,4 +69,10 @@ export const MainContentInfo = styled.div`
             /* white-space: ; */
         }
     }
+`;
+
+
+export const NextPrev = styled.div`
+    z-index: 30;
+    position: absolute;
 `;

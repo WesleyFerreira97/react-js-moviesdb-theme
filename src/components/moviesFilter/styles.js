@@ -1,4 +1,4 @@
-import styled, {css, keyframes } from "styled-components";
+import styled, {css} from "styled-components";
 import { colors } from "../utilities/colors";
 import { typography } from "../utilities/typography";
 import { breakpoint } from "../utilities/breakpoints";
