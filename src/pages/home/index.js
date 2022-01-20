@@ -16,12 +16,7 @@ export function Home() {
     return (
         <>
         <Carousel />
-        
-        
-        
-        
-        
-        <Container bg={'0F1021'}>
+        <Container>
             <Row width="80%">
                 <SectionTitle>Popular Movies</SectionTitle>
                 <MoviesFilter />

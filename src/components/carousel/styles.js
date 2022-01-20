@@ -39,7 +39,7 @@ export const MainContentBackground = styled.div`
         top: 0;
         z-index: 1;
         background-color: ${colors.secondary};
-        opacity: 0.5;
+        opacity: 0.7;
     }
 
     img {
@@ -63,6 +63,7 @@ export const MainContentInfo = styled.div`
     .main-content {
 
         &__info-wrap{
+            white-space: normal;
             /* padding: 2rem; */
             width: 50%;
         }
@@ -70,10 +71,15 @@ export const MainContentInfo = styled.div`
         &__title {
             ${typography.TitleXl}
             color: ${colors.neutral};
-            font-size: 4rem !important;
+            font-size: 3rem !important;
             text-transform: uppercase;
             font-weight: 900;
             /* white-space: ; */
+        }
+
+        &__overview {
+            ${typography.TextMd}
+            color: ${colors.neutral};
         }
     }
 `;

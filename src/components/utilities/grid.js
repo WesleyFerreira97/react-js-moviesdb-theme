@@ -1,22 +1,25 @@
 import styled from "styled-components";
 import { breakpoint } from "./breakpoints";
+import { colors } from "./colors";
 
 export let Container = styled.div`
     height: 100%;
     display: flex;
     justify-content: center;
     position: relative;
-    background: #${props => props.bg};
+    background: ${props => props.bg};
+    padding: 5rem 0;
 `;
 
 Container.defaultProps = {
-    bg: 'inherit',
+    bg: '#0F1021',
 }
 
 export const Row = styled.div`
     width: ${props => props.width};
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     @media (max-width: ${breakpoint.sm}) {
         width: 95%;
     }
