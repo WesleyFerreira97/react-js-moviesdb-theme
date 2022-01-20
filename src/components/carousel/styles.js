@@ -7,6 +7,13 @@ export const MainContentWrap = styled.div`
     height: 100vh;
     width: 100%;
     position: relative;
+    overflow: hidden;
+
+    .main-content__item-wrap {
+        white-space: nowrap;
+        transition: transform 0.3s;
+        height: 100%;
+    }
 
     .current-index {
         z-index: 30;
@@ -16,7 +23,7 @@ export const MainContentWrap = styled.div`
 export const MainContentItem = styled.div`
     height: 100%;
     width: 100%;
-    position: absolute;
+    display: inline-flex;
 `;
 
 export const MainContentBackground = styled.div`
@@ -75,4 +82,5 @@ export const MainContentInfo = styled.div`
 export const NextPrev = styled.div`
     z-index: 30;
     position: absolute;
+    bottom: 0;
 `;
