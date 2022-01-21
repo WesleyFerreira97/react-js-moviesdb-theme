@@ -56,6 +56,7 @@ export const FooterContainer = styled.footer`
             }
 
             .input-text {
+
                 input {
                     width: 300px;
                     padding: .75rem 0;
@@ -74,8 +75,8 @@ export const FooterContainer = styled.footer`
                             top: -5%;
                         }
                     }
-
                 }
+
                 &::after {
                     position: absolute;
                     left: 5px;
@@ -91,12 +92,12 @@ export const FooterContainer = styled.footer`
                 background-color: ${colors.primary};
                 border: none;
                 color: ${colors.neutral};
-                margin-top: 3rem;
+                margin-top: 2rem;
                 /* padding: .5rem 1rem 1rem 0; */
                 padding: .5rem;
                 border-radius: 4px;
                 text-transform: uppercase;
-                font-weight: 700;
+                font-weight: 500;
                 cursor: pointer;
 
                 &:active {
@@ -113,6 +114,12 @@ export const FooterContainer = styled.footer`
             color: #605d85;
             font-weight: 500;
             padding: .75rem .75rem .75rem 0;
+            cursor: pointer;
+
+            &:hover {
+                color: ${colors.primary};
+                transform: scale(1.05);
+            }
         }
     }
 `;

@@ -5,7 +5,7 @@ import { Row } from '../utilities/grid'
 
 export const CarouselItem = (props) => {
     const { title, backdrop_path, overview } = props.movie;
-    console.log(props.movie);
+
     return (
         <>
             <MainContentItem>
