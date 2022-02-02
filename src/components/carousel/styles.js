@@ -83,7 +83,7 @@ export const MainContentInfo = styled.div`
         }
     }
 `;
-
+ 
 
 export const NextPrev = styled.div`
     z-index: 30;
